@@ -1,0 +1,3 @@
+recursive-include request_board_streamlit/frontend/build *
+global-exclude node_modules/*
+global-exclude node_modules

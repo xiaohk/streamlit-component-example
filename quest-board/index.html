@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quest Board</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/quest-board.ts"></script>
+  </head>
+  <body>
+    <quest-board
+      quests='["Echoes of the Forgotten Realm", "The Ashen King&apos;s Bargain", "The Clockwork Gambit"]'
+    ></quest-board>
+  </body>
+
+  <script>
+    const questBoard = document.querySelector('quest-board');
+    questBoard.addEventListener('quest-clicked', (event) => {
+      const { resolve, reject } = event.detail;
+      const randomReward = Math.floor(Math.random() * 10000);
+      resolve(randomReward);
+    });
+  </script>
+</html>

@@ -1,0 +1,4 @@
+Metadata-Version: 2.2
+Name: quest_board_streamlit
+Version: 0.0.1
+Requires-Dist: streamlit>=0.63

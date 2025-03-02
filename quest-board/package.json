@@ -1,0 +1,29 @@
+{
+  "name": "quest-board",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "types": "./lib/quest-board.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/quest-board.d.ts",
+        "default": "./lib/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:library": "tsc && vite build --mode library",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
