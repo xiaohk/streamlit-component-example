@@ -7,7 +7,8 @@ standard web technologies can be complex. The trickiest aspect is managing the
 event handling within Streamlit. However, here is a practical solution for
 developing a **Streamlit custom component** with **Web Components** that allows
 for **two-way communication** with the Streamlit app. You can find all the code
-for this working example on GitHub.
+for this working example on
+[GitHub](https://github.com/xiaohk/streamlit-component-example).
 
 # 1. Compile Web Component
 
